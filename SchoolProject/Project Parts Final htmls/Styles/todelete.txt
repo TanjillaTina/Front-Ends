@@ -1,0 +1,49 @@
+$file = fopen("Saving_Class_Section.txt","r");
+                 $cls=fgets($file);
+                 $sect=fgets($file);
+
+                  fclose($file);
+
+
+//////////////
+$host="localhost";
+	$username="root";
+	$password="";
+	$db_name="school";
+	$tina_con=mysqli_connect($host,$username,$password,$db_name);
+	if(!$tina_con)
+	{
+
+	die('failed to connect to db'.mysqli_connect_errno());
+
+
+	}
+	else{
+
+$name=$_POST['SName'];
+                $fname=$_POST['FName'];
+                $mname=$_POST['MName'];
+                $rn=$_POST['RNum'];
+                $bid=$_POST['BD'];
+                $sect="";$cls="";
+
+                $file = fopen("Saving_Class_Section.txt","r");
+                 $cls=fgets($file);
+                 $sect=fgets($file);
+
+                  fclose($file);
+		        $sql="insert into Personal_Info (Name, Roll, Class, Section, Ft_Name, Mt_Name, BDD, ImLoc) 
+                     values ('$name', '$rn', '$cls', '$sect', '$fname', '$mname', '$bid', '$target_file');";
+
+
+
+		    	$result=mysqli_query($tina_con,$sql) or die(mysqli_error());
+
+				if ($result) {
+			      	echo "<script language='javascript' type='text/javascript'>alert('Image Has Been Successfully Uploaded');</script>"; 
+			           
+                         header("Location:AddNewStuIn.php"); 
+                         exit;
+			            }
+
+}

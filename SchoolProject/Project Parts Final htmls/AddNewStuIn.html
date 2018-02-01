@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Home</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Custom styles for this template -->
+    <link href="Styles/AddNewStuIn.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+ 
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="AddNew">Add New Student</a></li>
+           <li><a href="">See All Student</a></li>
+          <li class="active"><a href="#">LogOut</a></li>
+          
+        </ul>
+        <h3 class="text-muted">Student's Personal Information</h3>
+      </div>
+
+      <div class="jumbotron" id="AddNew">
+        <h1>Add New Student</h1>
+        <p class="lead">Enter All the Informations and Enter Save Button</p>
+        <p></p>
+      <div class="row">
+
+
+          <div class="col-md-12 col-xs-12 col-sm-0 col-lg-12 ">
+            <div class="col-md-1 col-xs-2 col-sm-0 col-lg-2 "></div>
+            <div class="col-md-10 col-xs-8 col-sm-8=12 col-lg-8">
+                <div class="customDivF"><class=text-primary>
+
+
+
+             <form action="/login" method="post">
+                   <div class="form-group form-inline">
+                   <label for="Name">Student's Name : </label>
+                   <input type="text" class="form-control" id="Name" placeholder="Student's Name">
+                   </div>
+                   <div class="form-group form-inline">
+                   <label for="Name">Roll Number : </label>
+                   <input type="number" class="form-control" id="RNum" placeholder="1">
+                   </div>
+                   <div class="form-group form-inline">
+                   <label for="Name">Father's Name : </label>
+                   <input type="text" class="form-control" id="FName" placeholder="Father's Name">
+                   </div>
+
+                    <div class="form-group form-inline">
+                   <label for="Name">Mother's Name : </label>
+                   <input type="text" class="form-control" id="MName" placeholder="Mother's Name">
+                   </div>
+                   <div class="form-group form-inline">
+                   <label for="Name">Date of Birth : </label>
+                   <input class="form-control" type="date" value="2011-08-19" id="BD">
+                   </div>                     
+                    <div class="form-group form-inline">
+                    <label for="exampleInputFile">Upload Picture :</label>
+                    <input type="file" class="form-control-file" id="InputImage">
+                    </div>
+                   <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                </div>
+                
+            </div>
+            <div class="col-md-1 col-xs-2 col-sm-0 col-lg-2"></div>
+
+
+        </div>
+      </div>
+
+
+    </div> <!-- /container -->
+       
+       
+     
+      <div class="footer">
+        <p>My Footer here</p>
+      </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
